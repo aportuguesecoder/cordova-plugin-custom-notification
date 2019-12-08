@@ -8,7 +8,7 @@
     <keywords>cordova,android,notification,sound</keywords>
 
     <engines>
-        <engine name="cordova" version=">=8.0.0" />
+        <engine name="cordova" version=">=6.0.0" />
     </engines>
 
     <js-module src="www/CustomNotification.js" name="CustomNotification">
