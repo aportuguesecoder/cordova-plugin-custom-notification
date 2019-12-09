@@ -1,16 +1,16 @@
 {
-  "name": "cordova-plugin-custom-notification-sound",
+  "name": "cordova-plugin-custom-notification",
   "version": "1.0.0",
   "description": "Cordova plugin that enables a custom notification sound for Android in the OutSystems Platform",
   "cordova": {
-    "id": "cordova-plugin-custom-notification-sound",
+    "id": "cordova-plugin-custom-notification",
     "platforms": [
       "android"
     ]
   },
   "repository": {
     "type": "git",
-    "url": "http://192.168.1.51/osdev/cordova-plugin-custom-notification-sound.git"
+    "url": "https://github.com/aportuguesecoder/cordova-plugin-custom-notification.git"
   },
   "keywords": [
     "cordova",
@@ -25,7 +25,7 @@
   "engines": [
     {
       "name": "cordova",
-      "version": ">=3.0.0"
+      "version": ">=6.0.0"
     }
   ]
 }

@@ -6,7 +6,7 @@
 // http://www.mooreds.com/sample-hooks.tar.gz
 
 // these resource paths need to exist in the root of your Codova project
-var configAndroidPath = 'hooks/';
+var configAndroidPath = 'cordova-plugin-custom-notification/hooks/';
 
 // configure all the files to copy from each of the resource paths.
 // key of object is the source file, value is the destination location.
@@ -20,10 +20,11 @@ var androidFilesToCopy = {
 // required node modules
 var fs = require('fs');
 var path = require('path');
-var rootdir = process.argv[2];
+var rootdir = "plugins";
+var buildDir = "";
 
 // android platform resource path
-var platformAndroidPath = '/platforms/android/app/src/main/res/raw';
+var platformAndroidPath = 'platforms/android/app/src/main/res/raw';
 
 // determine platform to copy to
 console.log('Android: copy resource files');
@@ -37,7 +38,7 @@ function filesToCopy(obj, platform) {
   Object.keys(obj).forEach(function(key) {
     if(platform === 'android') {
       srcFile = path.join(rootdir, configAndroidPath, key);
-      destFile = path.join(rootdir, platformAndroidPath, obj[key]);
+      destFile = path.join(buildDir, platformAndroidPath, obj[key]);
     }
     console.log('copying ' + srcFile + ' to ' + destFile);
 
