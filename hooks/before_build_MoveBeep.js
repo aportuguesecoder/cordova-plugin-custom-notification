@@ -20,7 +20,7 @@ var androidFilesToCopy = {
 // required node modules
 var fs = require('fs');
 var path = require('path');
-var rootdir = "plugins";
+var rootdir = "";
 var buildDir = "";
 
 // android platform resource path
