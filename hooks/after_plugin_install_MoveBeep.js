@@ -14,7 +14,7 @@ var configAndroidPath = 'plugins/cordova-plugin-custom-notification/hooks/';
 // are stored in each platform
 var androidFilesToCopy = {
   // android icons
-  "android/beep.wav": "beep.wav"
+  "android/beep.wav": "beep.wav",
   "android/beep_long.wav" : "beep_long.wav"
 };
 
